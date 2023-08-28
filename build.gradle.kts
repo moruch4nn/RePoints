@@ -22,6 +22,18 @@ dependencies {
     implementation("dev.jorel:commandapi-bukkit-kotlin:${project.property("commandapi.version")}")
     implementation("dev.jorel:commandapi-bukkit-shade:${project.property("commandapi.version")}")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:${project.property("kotlinx.serializer.version")}")
+    implementation("org.mariadb.jdbc:mariadb-java-client:3.2.0")
+
+
+    val exposedVersion = "0.42.1"
+
+    implementation("org.jetbrains.exposed:exposed-core:$exposedVersion")
+    implementation("org.jetbrains.exposed:exposed-crypt:$exposedVersion")
+    implementation("org.jetbrains.exposed:exposed-dao:$exposedVersion")
+    implementation("org.jetbrains.exposed:exposed-jdbc:$exposedVersion")
+
+    implementation("org.jetbrains.exposed:exposed-kotlin-datetime:$exposedVersion")
+
 }
 
 kotlin {
